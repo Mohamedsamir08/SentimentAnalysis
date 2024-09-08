@@ -3,6 +3,15 @@ from sklearn.svm import SVC
 from sklearn.feature_extraction.text import TfidfVectorizer
 import re
 import pickle
+import pandas as pd
+import numpy as np
+import re
+import nltk
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import accuracy_score
+from nltk.corpus import stopwords
 
 # Preprocessing function (basic text cleaning)
 def preprocess_arabic_text(text):
